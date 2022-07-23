@@ -1,10 +1,21 @@
 # sort-json
 
-    This project is to enable the filteration of the hotels list. 
+This project is to enable the filteration of the hotels list. 
 
-## Installation
+- [Contributing](#contributing)
+- [Documentation](#documentation)
+- [Ownership](#ownership)
 
-    Try running `yarn install` to install dependencies.
+## contributing
 
-## Usuage
-    Try running `yarn start` to start the application
+Please follow the [Contributing Guidelines](CONTRIBUTING.md).
+
+## documentation
+
+Documentation for this repo can be found below.
+
+- 📄 [Docs](docs/index.md) - repo documentation
+
+## ownership
+
+Any change in this repo is to be approved by [CODEOWNERS](.github/CODEOWNERS)
