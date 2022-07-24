@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {List} from 'antd';
 
-import { HotelListData } from './../../hooks/use-get-hotel-list/use-get-hotel-list';
-import { SortType } from '../../types/Filters';
+import { HotelListData } from './../../types/HotelData.types';
+import { SortType } from '../../types/Filters.type';
 import { sortHotel } from '../..//utils/hotel';
 import { HotelListItem } from '../HotelListItem';
 
@@ -22,7 +22,7 @@ const sortedData = sortHotel(data,filter )
                     actions={[
                     ]}
                 >
-                    <HotelListItem hotel={item} />
+                    <HotelListItem {...item} />
                 </List.Item>
             )}
         />);
