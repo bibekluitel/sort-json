@@ -1,0 +1,17 @@
+*.css
+*.ejs
+*.jpg
+*.json
+*.md
+*.mp4
+*.png
+*.scss
+*.svg
+*.tgz
+*.tsbuildinfo
+*.yaml
+build/
+coverage/
+dist/
+node_modules/
+public/mockServiceWorker.js
