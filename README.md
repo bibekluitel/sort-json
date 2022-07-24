@@ -27,4 +27,4 @@ Please execute the `yarn start` command to run the project in local environment
 
 We can also use the `yarn build` for building the project for production release.
 
-We can ru our test cases by executing `yarn test` command.
+We can run our test cases by executing `yarn test` command.
