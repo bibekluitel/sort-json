@@ -1,5 +1,7 @@
 import React from "react";
 import reactDom from "react-dom";
-import App from "./src/App"
+import { App } from "./src/App";
+import { getBaseUrl } from './src/utils/url';
 
-reactDom.render(<App />, document.getElementById("root"));
+const baseUrl = getBaseUrl();
+reactDom.render(<App baseUrl={baseUrl} />, document.getElementById("root"));
