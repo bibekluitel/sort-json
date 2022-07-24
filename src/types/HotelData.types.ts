@@ -1,36 +1,36 @@
 
 export type HotelListData = {
-    id: string;
+    id?: string;
   
-    property: {
-      propertyId: string;
-      title: string;
-      address: string[];
-      previewImage: {
+    property?: {
+      propertyId?: string;
+      title?: string;
+      address?: string[];
+      previewImage?: {
         url: string;
         caption: string;
         imageType: string;
       };
-      rating: {
+      rating?: {
         ratingValue: number;
         ratingType: RatingType;
       }
     };
-    offer: {
-      promotion: {
+    offer?: {
+      promotion?: {
         title: string;
         type: string;
       };
-      name: string;
-      displayPrice: {
+      name?: string;
+      displayPrice?: {
         amount: number;
         currency: string;
       };
-      savings: {
+      savings?: {
         amount: number;
         currency: string;
       };
-      cancellationOption: {
+      cancellationOption?: {
         cancellationType: HotelCancellationType;
       }
     }
