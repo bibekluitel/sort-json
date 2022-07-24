@@ -4,9 +4,14 @@ import {
     QueryClientProvider,
 } from '@tanstack/react-query'
 
-import { Header } from "./components/Header";
-import { HotelsList } from "./components/HotelsList";
+import { Header as HeaderComp } from "./components/Header";
+import { HotelsListContent } from "./components/HotelsListContent";
 import { AppContext } from "./context/AppContext";
+
+
+
+import 'antd/dist/antd.css';
+import "./index.scss";
 
 const queryClient = new QueryClient()
 
@@ -16,8 +21,10 @@ export type AppProps = {
 
 export const App: React.FC<AppProps> = ({ baseUrl }) => (<QueryClientProvider client={queryClient}>
     <AppContext.Provider value={{ config: { baseUrl } }} >
-        <Header />
-        <HotelsList />
+        <div className="full-width full-height main-body">
+            <HeaderComp />
+            <HotelsListContent />
+        </div>
     </AppContext.Provider>
 </QueryClientProvider>
 );

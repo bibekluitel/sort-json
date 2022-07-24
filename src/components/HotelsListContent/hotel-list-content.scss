@@ -1,0 +1,15 @@
+.hotel-list-content-main {
+    display: flex;
+    flex-direction: column;
+    
+    .list-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .filter-container {
+
+        span {
+            margin: 0 10px;
+        }
+    }
+}

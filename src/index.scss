@@ -1,0 +1,25 @@
+@use './components/Header/header.scss';
+@use './components/HotelsListContent/hotel-list-content.scss';
+@use './components/HotelList/hotel-list.scss';
+
+
+.full-body {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.main-body {
+    max-width:1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: red;
+}
+
