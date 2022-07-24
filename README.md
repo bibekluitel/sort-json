@@ -26,3 +26,5 @@ Any change in this repo is to be approved by [CODEOWNERS](.github/CODEOWNERS)
 Please execute the `yarn start` command to run the project in local environment 
 
 We can also use the `yarn build` for building the project for production release.
+
+We can run our test cases by executing `yarn test` command.
