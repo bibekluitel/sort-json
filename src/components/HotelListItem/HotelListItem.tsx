@@ -5,7 +5,7 @@ import { getCancellationText, getCurrencyText, getFullAdress, getHotelrating, ge
 export type HotelListItemProps = {
     hotel: HotelListData;
 }
-export const HotelListItem: React.FC<HotelListData> = ({ id, property, offer }) => (<div className='hotel-list-item-main full-body'>
+export const HotelListItem: React.FC<HotelListData> = ({ id, property, offer }) => (<div className='hotel-list-item-main full-body' key={id} data-test-id="hotel-list-item">
     <div className='item-image'
         style={{ backgroundImage: `url(${property.previewImage.url})` }}
     >

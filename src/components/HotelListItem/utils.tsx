@@ -7,10 +7,10 @@ export const getHotelrating = (rating: number, ratingType: RatingType) => {
     let arr: React.ReactNode[] = [];
     for (let i = 0; i < Math.ceil(rating); i++) {
         if (ratingType === RatingType.SELF) {
-            arr.push(<span className='fa fa-circle checked' style={{ color: i+1 < rating && 'gold' }}></span>);
+            arr.push(<span key={i} data-test-id="circle-icon" className='fa fa-circle checked' style={{ color: i+1 < rating && 'gold' }}></span>);
         }
         else {
-            arr.push(<span className="fa fa-star checked" style={{ color: i+1 < rating && 'gold' }}></span>)
+            arr.push(<span key={i} data-test-id="star-icon" className="fa fa-star checked" style={{ color: i+1 < rating && 'gold' }}></span>)
         }
     }
     return arr;
@@ -18,9 +18,9 @@ export const getHotelrating = (rating: number, ratingType: RatingType) => {
 }
 
 export const getFullAdress = (address: string[]):string => {
-    return address.join();
+    return address?.join();
 }
 
-export const getCurrencyText = (currency: string) => `1 night total (${currency})`
+export const getCurrencyText = (currency: string) => currency && `1 night total (${currency})`
 
 export const getSavingsText =(savings: {amount: number})=> savings?.amount && `Save $ ${Math.floor(savings.amount)}~`;
