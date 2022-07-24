@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { AppConfig } from "./AppContext.types";
+import { AppConfig } from "../types/AppContext.types";
 
 export type AppContextValue = {
   config: AppConfig;

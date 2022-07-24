@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { AppConfig } from '../src/context/AppContext.types';
+import { AppConfig } from '../src/types/AppContext.types';
 import { AppContextValue, AppContext } from '../src/context/AppContext';
 
 type CustomRenderOptions = {
