@@ -1,6 +1,5 @@
 import { configure } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import "mutationobserver-shim";
 
 
 const JEST_TIMEOUT = 30_000;
