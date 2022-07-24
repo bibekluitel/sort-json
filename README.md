@@ -5,6 +5,7 @@ This project is to enable the filteration of the hotels list.
 - [Contributing](#contributing)
 - [Documentation](#documentation)
 - [Ownership](#ownership)
+- [Usuage](#usuage)
 
 ## contributing
 
@@ -19,3 +20,9 @@ Documentation for this repo can be found below.
 ## ownership
 
 Any change in this repo is to be approved by [CODEOWNERS](.github/CODEOWNERS)
+
+## Usuage
+
+Please execute the `yarn start` command to run the project in local environment 
+
+We can also use the `yarn build` for building the project for production release.
