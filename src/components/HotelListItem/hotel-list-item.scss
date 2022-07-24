@@ -1,0 +1,108 @@
+.hotel-list-item-main {
+    display: flex;
+    height: 200px;
+
+    .item-image {
+        position: relative;
+        z-index: 0;
+        margin: 0 10px;
+        width: 200px;
+        display: block;
+        max-width: 200px;
+        flex-grow: 1;
+
+        img {
+            position: absolute;
+            z-index: -1;
+        }
+
+        .deal-type {
+            span {
+                background-color: white;
+                color: red;
+                padding: 10px;
+                font-weight: bold;
+            }
+
+            margin-top: 20px;
+        }
+    }
+
+    .item-container {
+        width: 60%;
+
+        .header-row {
+            padding: 0 10px 0 0;
+            float: left;
+
+            .hotel-title {
+                font-size: 18px;
+                color: rgb(23, 20, 20);
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                max-width: 300px;
+                float: left;
+                margin-right: 10px;
+            }
+
+            .hotel-rating {
+                font-size: 14px;
+                color: grey;
+                float: left;
+
+                span {
+                    margin: 0 5px;
+                }
+            }
+        }
+
+        .hotel-address {
+            font-size: 10px;
+            color: rgb(39, 37, 37);
+            text-align: left;
+            padding: 10px;
+            margin-bottom: 30px;
+            float: left;
+
+        }
+
+        .hotel-room-type {
+            font-size: 14px;
+            text-decoration: underline;
+            margin-bottom: 50px;
+            float: left;
+        }
+
+        .hotel-cancellation-availability {
+            font-size: 14px;
+            color: green;
+        }
+    }
+
+    .hotel-price-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 200px;
+        flex: 1;
+        max-width: 200px;
+
+        .currency-details {
+            font-size: 12px;
+            font-weight: lighter;
+        }
+
+        .amount {
+            color:black;
+            font-size: 24px;
+            padding:10px 10px 20px 0px ;
+        }
+
+        .savings{
+            height: 50px;
+            font-size: 20px;
+            color: red;
+        }
+    }
+}

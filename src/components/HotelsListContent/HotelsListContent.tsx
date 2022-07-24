@@ -2,9 +2,10 @@ import * as React from 'react';
 import { Spin, Select } from 'antd';
 
 
-import { HotelListData, useGetHotelsList } from '../../hooks/use-get-hotel-list/use-get-hotel-list';
+import { useGetHotelsList } from '../../hooks/use-get-hotel-list/use-get-hotel-list';
 import {HotelList} from './../HotelList'
-import { SortType } from '../../types/Filters';
+import { SortType } from '../../types/Filters.type';
+import { HotelListData } from '../../types/HotelData.types';
 
 export interface HotelsListContentProps { };
 
